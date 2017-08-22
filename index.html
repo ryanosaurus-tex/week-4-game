@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!--my css-->
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./assets/javascript/game.js"></script>
 </head>
 
 <body>  
@@ -17,26 +19,32 @@
       
 
       <div id="instructions">
-        <button id="reset"></button>
+        <h2>Instructions</h2>
+        <p>These are the instructions.</p>
+        <button id="reset">reset</button>
       </div>
 
-      <div id="targetNumber"></div>
+      <div id="targetNumber">
+        <h2>The Target Number is:</h2>
+      </div>
 
-      <div id="scoreboard"></div>
+      <div id="scoreboard">scoreboard</div>
 
       <div id="crystals">
-        <button id="redCrystal"></button>
-        <button id="blueCrystal"></button>
-        <button id="yellowCrystal"></button>
-        <button id="greenCrystal"></button>
+        <button class="crystals" id="redCrystal">red</button>
+        <button class="crystals" id="blueCrystal">blue</button>
+        <button class="crystals" id="yellowCrystal">yellow</button>
+        <button class="crystals" id="greenCrystal">green</button>
       </div>
 
-      <div id="playerNumber"></div>
+      <div id="playerNumber">
+        <h2>You Have:</h2>
+      </div>
 
         
   
 
-<script src="./assets/js/game.js"></script>
+
 </body>
 </html>
 
