@@ -2,3 +2,21 @@ body {
 	padding-bottom: 70px;
 }
 
+.addTopBotMargin {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+}
+
+#crystalButtons {
+	min-width: 320px;
+	max-width: 460px;
+}
+
+#reset {
+	width: 100%;		
+}
+
+.zeroBotMargin {
+	margin-bottom: 0;
+}
