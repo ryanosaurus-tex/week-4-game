@@ -1,5 +1,6 @@
 body {
 	padding-bottom: 70px;
+	background-color: #ddd;
 }
 
 .addTopBotMargin {
@@ -19,4 +20,8 @@ body {
 
 .zeroBotMargin {
 	margin-bottom: 0;
+}
+
+.centeredText {
+	text-align: center;
 }
