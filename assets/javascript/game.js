@@ -9,43 +9,62 @@ $(document).ready(function(){
 	// generate random number between 19 - 120 and save as variable targetNumber
 
 	var targetNumber = randomInteger(19, 120);
+	var playerNumber = 0;
+	var wins = 0;
+	var losses = 0;
 
-	// attach targetNumber to div with same id
-
-	$("#targetNumber").html(targetNumber);
+	$("#targetNumber").html(targetNumber);		
+	$("#playerNumber").html(playerNumber);
+	$("#losses").html(losses);
+	$("#wins").html(wins);
 
 	
-
-	// attach playerNumber to div id with same name
-
-	$("#playerNumber").html(playerNumber);
 
 	// generate random values for colored crystals between 1 - 12 and save them as variables
 	
 	var crystal = ["red", "blue", "yellow", "green"];
-	var i = 0;
-	for(i = 0 ; i < crystal.length ; i++) {
-		crystal[i] = randomInteger(1, 12);
-		console.log(crystal[i]);
+	var j = 0;
+	for(j = 0 ; j < crystal.length ; j++) {
+		crystal[j] = randomInteger(1, 12);
+		console.log(crystal[j]);
 	}
 
-	// create a variable to store players current number
-
-	var playerNumber = 0;
-
-	// add the random values to the players total on button click
+	// add the random values to the player's total on button click
 
 	$("#redCrystal").click(function(){
-		playerNumber = Number(crystal[0]) + Number($(this).html());
-		$("#playerNumber").html(playerNumber);
+		$("#playerNumber").html(function(i, val) {
+			return val*1 + crystal[0]
+		});
+
+
+	});
+
+	$("#blueCrystal").click(function(){
+		$("#playerNumber").html(function(i, val) {
+			return val*1 + crystal[1]
+		});
+		
+
+	});
+
+	$("#yellowCrystal").click(function(){
+		$("#playerNumber").html(function(i, val) {
+			return val*1 + crystal[2]
+		});
+		
+
+	});
+
+	$("#greenCrystal").click(function(){
+		$("#playerNumber").html(function(i, val) {
+			return val*1 + crystal[3]
+		});
+		
+
 	});
 
 
 
-
-
-
-	
 
 
 
